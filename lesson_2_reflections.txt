@@ -1,18 +1,26 @@
 What happens when you initialize a repository? Why do you need to do it?
-
+A：需要运行 git init 命令才能初始化，并且初始化时并没有自动提交。
+   git status 命令可以查看初始化的版本。
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
-
+A：暂存区是工作目录和版本目录的国度区域，它可以将工作目录中有逻辑联系的文件绑定提交到版本目录，以后对版本更改时这些文件可以同时提交。
 How can you use the staging area to make sure you have one commit per logical
 change?
-
+A：git add 命令将工作目录中指定的文件提交到暂存取。
+   git commit 命令将暂存区的内容全部提交到 repository
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
-
+A：当你想为项目添加实验性的功能而又不影响正式版本时，添加分枝将有帮助。当与别人合作时，也应添加分枝。
+	development branch; experimental branch; unique feature branch; 
+	fix the bug and then compartmentalize that work.
 How do the diagrams help you visualize the branch structure?
-
+A：父分支，可达性。 git log --graph --oneline 命令。
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+A: The result of merging two branches is combining all the changes made in different branch with the main branch thereby all changes will be in one single place.
+	The diagram representation is an easy way to see the information about branches, its commits and so it will be easy for us to indentify when exactly we can merge.
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+A: When the two branches consist of code which are completely different, then automatic merging will save time. But, when there is a situation that needs human intervention and to check thereby causing no conflicts, then manual merging comes into play.
+	Automatic merging cannot fix two or more changes to the same lines of code, it can only merge new unrelated lines. Doing all merging manually would be way too tedious.
