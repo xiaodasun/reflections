@@ -1,0 +1,49 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    Fill in your answer here
+    diff -u file_old file_new
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Fill in your answer here
+    如果你的新版本出现了意想不到的问题，你可以很轻松的返回你的历史版本
+    也可以轻松找出问题所在。
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Fill in your answer here
+    手动提交：
+    	优点：每次提交都是按逻辑块来做的修改
+    	缺点：提交的频率可能过快或过慢，或者忘记提交
+    自动提交：
+    	优点：每次提交都是固定的，避免忘记提交
+    	缺点：提交的版本可能不是一个逻辑块
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Fill in your answer here
+    在一些需要多个文件的项目中，有些文件之间相互有联系，所以一次提交报错多个文件有利于保持文件之间的一致性，同时也保持了逻辑性。
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+    Fill in your answer here
+    git config --global color.ui auto  获得彩色的diff输出
+    git log  查看所有提交的历史记录
+    git diff ID1 ID2  查看两个版本不同之处
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Fill in your answer here
+    用版本控制，我可以随时将代码恢复到之前的任何一个版本，所以出错不可怕。
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Fill in your answer here
+    暂时主要用来装逼，学了再说，哈哈！
